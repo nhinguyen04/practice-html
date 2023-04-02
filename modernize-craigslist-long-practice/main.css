@@ -1,0 +1,201 @@
+.homepage #catAbb,
+.homepage #go,
+.homepage .leftlinks #cl_app_beta,
+.no-js,
+
+/* Use the font "Helvetica Neue", "Helvetica", sans-serif
+Have a background color of Whitesmoke (#F5F5F5)
+Have a text color of Charcoal Gray (#464646) */
+* {
+  font: "Helvetica Neue", "Helveticca", sans-serif;
+  background-color: whitesmoke;
+  color: #464646;
+}
+
+/* Remove the underline text decoration on all anchor tags by using the text-decoration property
+Give all UL elements 0 padding using the padding property */
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0px;
+}
+
+/* Remove the bullet points on all LI elements that are direct children of
+UL elements using the list-style property */
+ul > li {
+  list-style-type: none;
+}
+
+/* Have the Craigslist purple color #800080 when they are visited
+Have a font weight of bold and color #800080 when they are are hovered */
+a:visited {
+  color: #800080;
+}
+
+a:hover {
+  color: #800080;
+  font-weight: bold;
+}
+
+/* Have a font weight of bold and color #800080 when they are are hovered */
+a > span:hover {
+  color: #800080;
+  font-weight: bold;
+}
+
+/* Use a class selector to select the element with the class "page-container" and:
+Give the container a maximum width of 1200 pixels using the max-width property */
+.page-container {
+  max-width: 1200px;
+}
+
+/* Use ID selectors to style the elements with the IDs "leftbar", "center", and "rightbar" so that:
+They are all floated left using the float property
+They all have top/bottom padding of zero and left/right padding of 30 pixels using the padding property
+They all have a box sizing of border box using the box-sizing property */
+#leftbar, #center, #rightbar {
+  float: left;
+  padding: 0px 30px 0px;
+  box-sizing: border-box;
+}
+
+/* Use a tag selector on the FOOTER element to:
+Make the footer clear the float in both directions using the clear property */
+footer {
+  clear: both;
+}
+
+/* Use ID selectors to select the elements with the IDs "leftbar" and "rightbar" and:
+Give them a width of 25% */
+#leftbar, #rightbar {
+  width: 25%;
+}
+
+/* Use an ID selector to select the element with the ID "center" and:
+Give it a width of 50%
+Give it a solid one pixel border in the color #464646
+Give it a border radius of ten pixels using the border-radius */
+#center {
+  width: 50%;
+  border: 1px solid #464646;
+  border-radius: 10px;
+}
+
+/* Use a child combinator selector to style all DIVs that are direct children of the element with the "center" ID:
+Float them to the left
+Give each of them a width of 33% */
+#center > div {
+  float: left;
+  width: 33%;
+}
+
+/* Use a descendant combinator selector to style the H2 that is a descendant of the element with the "topban" ID:
+Align the text of the H2 to the center */
+#topban h2 {
+  text-align: center;
+}
+
+/* Use a tag+class selector to style the UL element with the class name "clfooter" and:
+Align the text of the UL to the center
+Give it a top border only that is one pixel solid gray
+Give it top/bottom padding of ten pixels and left/right padding of zero pixels */
+ul.clfooter {
+  text-align: center;
+  border-top: 1px solid gray;
+  padding: 10px 0px;
+}
+
+/* Use a child combinator selector to style all LI elements that are direct children of the UL with the class name "clfooter" and:
+Display all LIs as inline elements using the display property
+Give all LIs in the ul.clfooter 5px padding on the right side */
+ul.clfooter > li {
+  display: inline;
+  padding-right: 5px;
+}
+
+/* Add peace symbol emoji before h4 elements */
+h4::before {
+  content: '☮';
+  color: white;
+  background-color: plum;
+  padding: 0px 3px;
+  margin-right: 5px;
+}
+
+/* Use the border-collapse property on the table with the class of "cal" to collapse
+the borders around each date into a single calendar. */
+.cal {
+  border-collapse: collapse;
+}
+
+/* Set the border on each TD to be a solid 1px with color #333.
+Center-align the content of all the TDs in the calendar. */
+td {
+  border: 1px solid #333;
+  text-align: center;
+}
+
+/* Change all the colors of the text of the links to green.
+Make all of the link texts bold. */
+.cal a {
+  color: green;
+  font-weight: bold;
+}
+
+/* Change the color of the text of the days in the calendar that are not links to a half-transparent black.
+Use the cursor property to indicate that a day without a link is not clickable. */
+.cal .past {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Highlight the day indicated as "today" (look at the HTML)
+by setting its background color to dark violet and its text color to white. */
+table.cal td.today a {
+  background-color: darkviolet;
+  color:white
+}
+
+/* When the pointer (cursor) is over one of the table data cells that contains the numbers,
+have the table cell's background color turn lavender. */
+.cal a:hover {
+  background-color: lavender;
+}
+
+
+
+
+
+
+/* ----- */
+p.more {
+  display: none;
+}
+
+#logo {
+  font-size: 2.5rem;
+}
+
+.homepage-search .querybox {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid #464646;
+  font-size: 16px;
+}
+
+.menu.collapsible > li {
+  cursor: pointer;
+}
+
+.menu.collapsible > li.expand.s ul {
+  display: block;
+}
+
+.menu.collapsible > li ul {
+  display: none;
+}
+
+/* Your code here */
