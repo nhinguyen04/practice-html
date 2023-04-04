@@ -1,0 +1,12 @@
+.main {
+    font-size: 12px;
+}
+
+.main > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.main > ul > li {
+    padding: 15px 15px;
+}

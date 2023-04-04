@@ -1,0 +1,56 @@
+.interests {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 0.75fr;
+    grid-area:
+    "img1 text1 img2 text2 img3 text3 text4 img4 text5";
+    line-height: 20px;
+    padding: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.dog__text + .cat__img, .cat__text + .plug__img, .plug__text + .stocks, .stocks + .weather__img {
+    border-left: 1px solid #e2e2e2;
+    padding: 10px;
+}
+
+.interests-bar__headline {
+    font-weight: bold;
+}
+
+.cat__img, .dog__img, .plug__img, .weather__img {
+    width: 60%;
+    padding: 0 15px;
+    justify-self: center;
+    align-self: center;
+}
+
+.interests-bar__stock-price span {
+    display: flex;
+    flex-direction: column;
+}
+
+.interests-bar__stock-text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: green;
+    font-weight: bold;
+}
+
+.interests-bar__stock-price {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+    line-height: 30px;
+}
+
+/* .stocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interests-bar__stock-price span, .interests-bar__stock-text div {
+    margin: 10px 10px 0;
+    border-bottom: 1px solid #e2e2e2;
+} */
